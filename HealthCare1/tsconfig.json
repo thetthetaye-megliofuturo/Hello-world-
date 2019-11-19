@@ -1,0 +1,27 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    //"noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "module": "es2015",
+    "target": "es6",
+    // import Vue from 'vue' ÇÃèëÇ´ï˚ÇãñóeÇ∑ÇÈ
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "moduleResolution": "node",
+    "outDir": "tmp/scripts"
+  },
+  "include": [
+    "src/scripts/*"
+  ],
+  "exclude": [ "platforms", "node_modules", "bower_components", "plugins", "merges", "res", "bin", "bld" ]
+}

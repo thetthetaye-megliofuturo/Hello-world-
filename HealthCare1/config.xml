@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="jp.knockonthedoor.hc.kids" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>nanacara</name>
+  <plugin name="cordova-plugin-whitelist" spec="1" />
+  <access origin="*" />
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  <allow-intent href="tel:*" />
+  <allow-intent href="sms:*" />
+  <allow-intent href="mailto:*" />
+  <allow-intent href="geo:*" />
+  <allow-navigation href="*" />
+  <platform name="android">
+    <allow-intent href="market:*" />
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+      <string>診療明細や発作の撮影に使われます</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSMicrophoneUsageDescription">
+      <string>診療明細や発作の撮影に使われます</string>
+    </edit-config>
+    <edit-config file="*-Info.plist" mode="merge" target="NSPhotoLibraryUsageDescription">
+      <string>診療明細や発作の撮影に使われます</string>
+    </edit-config>
+  </platform>
+  <preference name="deployment-target" value="10" />
+  <preference name="android-minSdkVersion" value="24" />
+  <preference name="android-targetSdkVersion" value="27" />
+  <preference name="Orientation" value="portrait" />
+  <plugin name="cordova-plugin-device" spec="~2.0.2" />
+  <plugin name="cordova-plugin-dialogs" spec="~2.0.1" />
+  <plugin name="cordova-plugin-camera-preview" spec="~0.10.0" />
+  <plugin name="cordova-background-video" spec="~1.0.15" />
+  <plugin name="cordova-plugin-camera" spec="~2.4.1" />
+  <plugin name="cordova-plugin-actionsheet" spec="~2.3.3" />
+  <plugin name="cordova-plugin-filepath" spec="1.5.6" />
+  <plugin name="com.virtuoworks.cordova-plugin-canvascamera" spec="1.1.9" />
+  <plugin name="cordova-plugin-media-capture" spec="3.0.3" />
+  <plugin name="cordova-plugin-file" spec="6.0.2" />
+</widget>
